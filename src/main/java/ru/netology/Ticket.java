@@ -1,18 +1,19 @@
 package ru.netology;
+
 public class Ticket implements Comparable<Ticket> {
 
     protected int id;
     protected int price;
-    protected String airportDep;
-    protected String airportArr;
-    protected int flightTime;
+    protected String from;
+    protected String to;
+    protected int time;
 
-    public Ticket(int id, int price, String airportDep, String airportArr, int flightTime) {
+    public Ticket(int id, int price, String from, String to, int time) {
         this.id = id;
         this.price = price;
-        this.airportDep = airportDep;
-        this.airportArr = airportArr;
-        this.flightTime = flightTime;
+        this.from = from;
+        this.to = to;
+        this.time = time;
     }
 
     public int getId() {
@@ -23,16 +24,16 @@ public class Ticket implements Comparable<Ticket> {
         return price;
     }
 
-    public String getAirportDep() {
-        return airportDep;
+    public String getFrom() {
+        return from;
     }
 
-    public String getAirportArr() {
-        return airportArr;
+    public String getTo() {
+        return to;
     }
 
-    public int getFlightTime() {
-        return flightTime;
+    public int getTime() {
+        return time;
     }
 
     public void setId(int id) {
@@ -43,16 +44,16 @@ public class Ticket implements Comparable<Ticket> {
         this.price = price;
     }
 
-    public void setAirportDep(String airportDep) {
-        this.airportDep = airportDep;
+    public void setFrom(String from) {
+        this.from = from;
     }
 
-    public void setAirportArr(String airportArr) {
-        this.airportArr = airportArr;
+    public void setTo(String to) {
+        this.to = to;
     }
 
-    public void setFlightTime(int flightTime) {
-        this.flightTime = flightTime;
+    public void setTime(int time) {
+        this.time = time;
     }
 
 
